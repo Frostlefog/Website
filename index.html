@@ -11,6 +11,9 @@
     </style>
   </head>
   <body>
+    <audio autoplay loop>
+      <source src="bgm.ogg" type="audio/ogg">
+    </audio>
     <h1>Dame dinero</h1>
     <p style="color:#9C822A" title="Dame Dinero">
       <b>Por favor<br> Dame dinero</b>
@@ -19,7 +22,7 @@
       <label for="name">Propietario/a de la Tarjeta:</label><br>
       <input type="text" id="name" name="" size="50" maxlength="50"><br>
       <label for="card">Numero de la Tarjeta:</label><br>
-      <input type="number" id="card" card="" size="16" maxlength="16"><br>
+      <input type="number" id="card" card="" size="16" min="1000000000000000" max="9999999999999999"><br>
       <input type="submit" value="Submit">
     </form>
   </body>
