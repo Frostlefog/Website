@@ -2,25 +2,18 @@
 <html>
   <head>
     <title>Magnate de Hielo's Donation Page</title>
-    <style>
-      body {
-        background-image: url("background.jpeg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-      }
-    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="splash.js"></script>
   </head>
   <body>
-    <audio autoplay loop>
-      <source src="bgm.ogg" type="audio/ogg">
-    </audio>
+    <div id="splash" onclick="start()">Click para entrar al formulario</div>
+    <audio id="bgm" src="bgm.ogg" loop></audio>
     <h1>Dame dinero</h1>
     <p style="color:#9C822A" title="Doname">
       <b>Por favor<br> Dame dinero</b>
     </p>
-    <div>
+    <div id="card">
       <form>
         <label for="name">Propietario/a de la Tarjeta:</label><br>
         <input type="text" id="name" name="" size="50" maxlength="50"><br>
